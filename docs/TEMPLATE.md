@@ -8,7 +8,12 @@
 
 ## 📚 Overview
 
-[Brief 2-3 sentence description of the algorithm. Explain what problem it solves and its primary characteristics.]
+[Brief 2-3 sentence description of the algorithm. Explain what problem it solves and why it's important.]
+
+**Key Characteristics:**
+- [Characteristic 1]
+- [Characteristic 2]
+- [Characteristic 3]
 
 ---
 
@@ -16,25 +21,30 @@
 
 ### Definition
 
-[Formal mathematical definition using proper notation. Define the problem space and solution space.]
+[Formal mathematical definition using proper notation]
+
+> **Formal Definition:** Let $S$ be a set of $n$ elements...
 
 ### Key Properties
 
-- **Property 1:** [Description with formula if applicable]
-- **Property 2:** [Description]
-- **Property 3:** [Description]
+| Property | Description | Formula |
+|----------|-------------|---------|
+| Property 1 | [Description] | $formula$ |
+| Property 2 | [Description] | $formula$ |
 
 ### Mathematical Formulation
 
+The core mathematical concept can be expressed as:
+
 $$
-\text{[Core mathematical formula or equation]}
+[LaTeX formula representing the core algorithm concept]
 $$
 
-Where:
-- $n$ = [definition]
-- $k$ = [definition]
+**Where:**
+- $n$ = [description]
+- $k$ = [description]
 
-#### Recurrence Relation (if applicable)
+### Recurrence Relation (if applicable)
 
 $$
 T(n) = \begin{cases}
@@ -43,39 +53,55 @@ aT(n/b) + f(n) & \text{otherwise}
 \end{cases}
 $$
 
-#### Proof of Correctness (optional)
+### Proof of Correctness (optional)
 
-**Theorem:** [State the theorem]
+**Loop Invariant / Induction Hypothesis:**
 
-**Proof:** [Brief proof sketch using mathematical induction, loop invariants, or other techniques]
+[Brief proof sketch using mathematical induction or loop invariants]
+
+1. **Initialization:** [Proof that invariant holds before first iteration]
+2. **Maintenance:** [Proof that if invariant holds before iteration, it holds after]
+3. **Termination:** [Proof that algorithm terminates and invariant implies correctness]
 
 ---
 
 ## 📊 Complexity Analysis
 
-| Metric | Best Case | Average Case | Worst Case |
-|--------|-----------|--------------|------------|
-| **Time** | $O(?)$ | $O(?)$ | $O(?)$ |
-| **Space** | $O(?)$ | $O(?)$ | $O(?)$ |
+### Time Complexity
+
+| Case | Complexity | When it occurs |
+|------|------------|----------------|
+| **Best** | $O(?)$ | [Describe scenario] |
+| **Average** | $O(?)$ | [Describe scenario] |
+| **Worst** | $O(?)$ | [Describe scenario] |
+
+### Space Complexity
+
+| Type | Complexity | Notes |
+|------|------------|-------|
+| **Auxiliary Space** | $O(?)$ | [Additional memory needed] |
+| **Total Space** | $O(?)$ | [Including input] |
 
 ### Additional Properties
 
 | Property | Value |
 |----------|-------|
-| **Stable** | Yes/No |
-| **In-place** | Yes/No |
-| **Adaptive** | Yes/No |
-| **Online** | Yes/No |
+| **In-place** | Yes / No |
+| **Stable** | Yes / No |
+| **Adaptive** | Yes / No |
+| **Online** | Yes / No |
 
 ### Detailed Analysis
 
-**Best Case:** [Explain when and why this occurs]
+[Explain how the complexity is derived step by step]
 
-**Average Case:** [Explain the expected behavior]
-
-**Worst Case:** [Explain when and why this occurs]
-
-**Space Complexity:** [Explain auxiliary space requirements]
+**Time Complexity Derivation:**
+```
+Level 0: [work done]
+Level 1: [work done]
+...
+Total: [summation]
+```
 
 ---
 
@@ -83,38 +109,43 @@ $$
 
 ```
 ALGORITHM AlgorithmName(input)
-────────────────────────────────────────────────────────
-INPUT:  [Description of input parameters]
-OUTPUT: [Description of output/result]
-────────────────────────────────────────────────────────
+─────────────────────────────────────────────────────
+    INPUT:  [Description of input parameters]
+    OUTPUT: [Description of what is returned/modified]
+─────────────────────────────────────────────────────
 
-1.  [Initialization step]
-2.  [Step 2]
-3.  FOR i ← 1 TO n DO
-4.      [Loop body step 1]
-5.      IF condition THEN
-6.          [Conditional step]
-7.      END IF
-8.  END FOR
-9.  RETURN result
+    1. [Initialization step]
+    2. [Step 2]
+    3. FOR i ← 1 TO n DO
+    4.     [Nested step]
+    5.     IF condition THEN
+    6.         [Action]
+    7.     END IF
+    8. END FOR
+    9. RETURN result
 ```
 
 ### Step-by-Step Walkthrough
 
-**Input:** [Example input, e.g., `[5, 2, 8, 1, 9]`]
+**Example Input:** `[sample input data]`
 
-| Step | State | Action |
-|------|-------|--------|
-| 0 | `[5, 2, 8, 1, 9]` | Initial state |
-| 1 | `[2, 5, 8, 1, 9]` | [Description of action] |
-| 2 | `[2, 5, 8, 1, 9]` | [Description of action] |
-| ... | ... | ... |
-| n | `[1, 2, 5, 8, 9]` | Final state |
+| Step | State | Action | Result |
+|------|-------|--------|--------|
+| 1 | Initial | [Action] | [State after] |
+| 2 | [State] | [Action] | [State after] |
+| 3 | [State] | [Action] | [State after] |
+| ... | ... | ... | ... |
 
-### Visual Representation
+**Visual Representation:**
 
 ```
-[ASCII diagram or visual representation of the algorithm's operation]
+[ASCII art or diagram showing the algorithm progression]
+
+Initial:  [5, 3, 8, 1, 2]
+Step 1:   [3, 5, 8, 1, 2]  ← swapped 5 and 3
+Step 2:   [3, 5, 8, 1, 2]  ← no swap needed
+...
+Final:    [1, 2, 3, 5, 8]
 ```
 
 ---
@@ -123,9 +154,23 @@ OUTPUT: [Description of output/result]
 
 ### Java Implementation Highlights
 
-1. **[Key aspect 1]:** [Explanation]
-2. **[Key aspect 2]:** [Explanation]
-3. **[Key aspect 3]:** [Explanation]
+```java
+/**
+ * Key implementation snippet (simplified for clarity)
+ * 
+ * @param input - description
+ * @return description
+ */
+public ReturnType methodName(ParamType input) {
+    // Key logic here
+}
+```
+
+### Implementation Details
+
+1. **[Detail 1]:** [Explanation]
+2. **[Detail 2]:** [Explanation]
+3. **[Detail 3]:** [Explanation]
 
 ### Code Reference
 
@@ -133,28 +178,11 @@ OUTPUT: [Description of output/result]
 
 📁 **Test File:** [`src/test/java/com/thealgorithms/[category]/[FileName]Test.java`](../src/test/java/com/thealgorithms/[category]/[FileName]Test.java)
 
-### Key Code Snippet
+### Optimizations Applied
 
-```java
-/**
- * [Brief description of the method]
- * 
- * @param input [parameter description]
- * @return [return value description]
- */
-public static ReturnType methodName(ParamType input) {
-    // Key implementation logic
-    // ...
-}
-```
-
-### Implementation Variants
-
-| Variant | Description | Use When |
-|---------|-------------|----------|
-| Iterative | [Description] | [Scenario] |
-| Recursive | [Description] | [Scenario] |
-| Optimized | [Description] | [Scenario] |
+- [ ] [Optimization 1]
+- [ ] [Optimization 2]
+- [ ] [Optimization 3]
 
 ---
 
@@ -164,118 +192,155 @@ public static ReturnType methodName(ParamType input) {
 
 **Use Case:** [Specific use case description]
 
-**How It Works:** [Explanation of how the algorithm is applied]
+**Example:** [Concrete example with context]
 
-**Example:** [Concrete example, e.g., "Used in PostgreSQL for query optimization"]
+**Why This Algorithm:** [Explanation of why this algorithm is chosen over alternatives]
 
 ### 2. [Application Domain 2]
 
 **Use Case:** [Specific use case description]
 
-**How It Works:** [Explanation of how the algorithm is applied]
+**Example:** [Concrete example with context]
 
-**Example:** [Concrete example]
+**Why This Algorithm:** [Explanation]
 
 ### 3. [Application Domain 3]
 
 **Use Case:** [Specific use case description]
 
-**How It Works:** [Explanation of how the algorithm is applied]
+**Example:** [Concrete example with context]
 
-**Example:** [Concrete example]
+**Why This Algorithm:** [Explanation]
 
 ### Industry Examples
 
-| Company/Product | Application | Details |
-|-----------------|-------------|---------|
-| [Company 1] | [How they use this algorithm] | [Additional context] |
-| [Company 2] | [How they use this algorithm] | [Additional context] |
-| [Company 3] | [How they use this algorithm] | [Additional context] |
+| Company/Product | Application | Scale |
+|-----------------|-------------|-------|
+| [Company 1] | [How they use this algorithm] | [Data size/throughput] |
+| [Company 2] | [How they use this algorithm] | [Data size/throughput] |
+| [Company 3] | [How they use this algorithm] | [Data size/throughput] |
+
+### Common Use Cases Summary
+
+```mermaid
+mindmap
+  root((Algorithm Name))
+    Domain 1
+      Use Case 1a
+      Use Case 1b
+    Domain 2
+      Use Case 2a
+      Use Case 2b
+    Domain 3
+      Use Case 3a
+```
 
 ---
 
 ## ⚖️ Comparison with Related Algorithms
 
-| Aspect | This Algorithm | [Alternative 1] | [Alternative 2] |
-|--------|----------------|-----------------|-----------------|
-| Time (Best) | $O(?)$ | $O(?)$ | $O(?)$ |
-| Time (Average) | $O(?)$ | $O(?)$ | $O(?)$ |
-| Time (Worst) | $O(?)$ | $O(?)$ | $O(?)$ |
-| Space | $O(?)$ | $O(?)$ | $O(?)$ |
-| Stable | Yes/No | Yes/No | Yes/No |
-| In-place | Yes/No | Yes/No | Yes/No |
-| Best For | [Scenario] | [Scenario] | [Scenario] |
+### Comparison Table
 
-### When to Choose This Algorithm
+| Aspect | This Algorithm | Alternative 1 | Alternative 2 |
+|--------|----------------|---------------|---------------|
+| **Time (Best)** | $O(?)$ | $O(?)$ | $O(?)$ |
+| **Time (Average)** | $O(?)$ | $O(?)$ | $O(?)$ |
+| **Time (Worst)** | $O(?)$ | $O(?)$ | $O(?)$ |
+| **Space** | $O(?)$ | $O(?)$ | $O(?)$ |
+| **Stable** | Yes/No | Yes/No | Yes/No |
+| **In-place** | Yes/No | Yes/No | Yes/No |
+| **Best For** | [Scenario] | [Scenario] | [Scenario] |
 
-✅ **Use when:**
-- [Condition 1]
-- [Condition 2]
-- [Condition 3]
+### When to Choose Each
 
-❌ **Avoid when:**
-- [Condition 1]
-- [Condition 2]
-- [Condition 3]
+| Choose This Algorithm When... | Choose Alternative When... |
+|------------------------------|----------------------------|
+| [Condition 1] | [Condition 1] |
+| [Condition 2] | [Condition 2] |
+| [Condition 3] | [Condition 3] |
+
+### Decision Flowchart
+
+```mermaid
+flowchart TD
+    A[Start: Need to solve problem X] --> B{Constraint 1?}
+    B -->|Yes| C{Constraint 2?}
+    B -->|No| D[Use Alternative 1]
+    C -->|Yes| E[Use This Algorithm]
+    C -->|No| F[Use Alternative 2]
+```
 
 ---
 
 ## ⚠️ Common Pitfalls & Edge Cases
 
-### Pitfalls
+### Pitfalls to Avoid
 
-1. **[Pitfall 1]:** [Description]
-   - *Problem:* [What goes wrong]
-   - *Solution:* [How to avoid/fix]
+| Pitfall | Description | Solution |
+|---------|-------------|----------|
+| **Pitfall 1** | [What can go wrong] | [How to avoid/fix] |
+| **Pitfall 2** | [What can go wrong] | [How to avoid/fix] |
+| **Pitfall 3** | [What can go wrong] | [How to avoid/fix] |
 
-2. **[Pitfall 2]:** [Description]
-   - *Problem:* [What goes wrong]
-   - *Solution:* [How to avoid/fix]
+### Edge Cases
 
-3. **[Pitfall 3]:** [Description]
-   - *Problem:* [What goes wrong]
-   - *Solution:* [How to avoid/fix]
+| Edge Case | Expected Behavior | Test |
+|-----------|-------------------|------|
+| Empty input | [Behavior] | ✅ Handled |
+| Single element | [Behavior] | ✅ Handled |
+| All identical elements | [Behavior] | ✅ Handled |
+| Already optimal input | [Behavior] | ✅ Handled |
+| Worst-case input | [Behavior] | ✅ Handled |
+| Maximum size input | [Behavior] | ⚠️ Consider |
 
-### Edge Cases to Handle
+### Error Handling
 
-| Edge Case | Expected Behavior | Test Input |
-|-----------|-------------------|------------|
-| Empty input | [Behavior] | `[]` |
-| Single element | [Behavior] | `[1]` |
-| All identical elements | [Behavior] | `[5, 5, 5, 5]` |
-| Already optimal | [Behavior] | `[1, 2, 3, 4, 5]` |
-| Reverse order | [Behavior] | `[5, 4, 3, 2, 1]` |
-| Large input | [Behavior] | `n > 10^6` |
-| Negative numbers | [Behavior] | `[-3, -1, -4]` |
+```java
+// Example of proper error handling
+if (input == null) {
+    throw new IllegalArgumentException("Input cannot be null");
+}
+if (input.length == 0) {
+    return defaultValue; // or throw exception
+}
+```
 
 ---
 
-## 🧪 Testing Strategies
+## 🧪 Testing Recommendations
 
-### Unit Tests
+### Test Categories
+
+1. **Unit Tests**
+   - [ ] Basic functionality
+   - [ ] Edge cases (empty, single element)
+   - [ ] Boundary conditions
+
+2. **Property-Based Tests**
+   - [ ] [Property 1 to verify]
+   - [ ] [Property 2 to verify]
+
+3. **Performance Tests**
+   - [ ] Benchmark with various input sizes
+   - [ ] Memory usage profiling
+   - [ ] Comparison with alternatives
+
+### Sample Test Cases
 
 ```java
 @Test
 void testBasicCase() {
     // Arrange
-    int[] input = {5, 2, 8, 1, 9};
-    int[] expected = {1, 2, 5, 8, 9};
+    int[] input = {5, 3, 8, 1, 2};
+    int[] expected = {1, 2, 3, 5, 8};
     
     // Act
-    int[] result = Algorithm.execute(input);
+    int[] result = algorithm.process(input);
     
     // Assert
     assertArrayEquals(expected, result);
 }
 ```
-
-### Test Categories
-
-- [ ] Basic functionality
-- [ ] Edge cases (empty, single element)
-- [ ] Boundary conditions
-- [ ] Performance/stress tests
-- [ ] Randomized testing
 
 ---
 
@@ -283,37 +348,51 @@ void testBasicCase() {
 
 ### Academic Sources
 
-1. [Author(s), "Paper Title", Journal/Conference, Year](link)
-2. [Textbook reference with page numbers]
+1. **[Author Name]** - *"Paper/Book Title"* (Year). [Link if available]
+2. **[Author Name]** - *"Paper/Book Title"* (Year). [Link if available]
 
 ### Online Resources
 
-1. [Resource Name](URL) - [Brief description]
-2. [Resource Name](URL) - [Brief description]
+1. [Resource Name](URL) - Brief description
+2. [Resource Name](URL) - Brief description
 
 ### Implementation References
 
-1. [Language/Framework documentation](link)
-2. [Related implementation](link)
+1. [Reference implementation or library](URL)
+2. [Related implementation](URL)
 
 ---
 
 ## 🔗 Related Algorithms
 
-| Algorithm | Relationship | Link |
-|-----------|--------------|------|
-| [Algorithm 1] | [How it relates] | [Link to doc](./algorithm-1.md) |
-| [Algorithm 2] | [How it relates] | [Link to doc](./algorithm-2.md) |
-| [Algorithm 3] | [How it relates] | [Link to doc](./algorithm-3.md) |
+### In This Repository
+
+- [[Related Algorithm 1]](./related-algorithm-1.md) - Brief relation description
+- [[Related Algorithm 2]](./related-algorithm-2.md) - Brief relation description
+
+### Prerequisites
+
+Before studying this algorithm, understand:
+- [[Prerequisite Concept 1]](link)
+- [[Prerequisite Concept 2]](link)
+
+### Next Steps
+
+After mastering this algorithm, explore:
+- [[Advanced Algorithm 1]](link) - How it builds on this
+- [[Advanced Algorithm 2]](link) - Related advanced topic
 
 ---
 
-## 📝 Changelog
+## 📝 Revision History
 
 | Date | Author | Changes |
 |------|--------|---------|
 | YYYY-MM-DD | [Name] | Initial documentation |
+| YYYY-MM-DD | [Name] | [What was updated] |
 
 ---
 
 *Last updated: [Date]*
+
+*Found an error or want to contribute? [Submit an issue](https://github.com/TheAlgorithms/Java/issues) or [create a pull request](https://github.com/TheAlgorithms/Java/pulls).*

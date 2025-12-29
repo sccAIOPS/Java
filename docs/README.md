@@ -1,284 +1,241 @@
 # 📚 TheAlgorithms/Java - Documentation
 
-> **Comprehensive algorithm documentation with mathematical foundations, pseudocode, and real-world applications**
-
-[![Build](https://github.com/TheAlgorithms/Java/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/TheAlgorithms/Java/actions/workflows/build.yml)
-[![Documentation](https://img.shields.io/badge/docs-complete-brightgreen.svg)](./README.md)
+> **Comprehensive Algorithm Documentation**  
+> Mathematical foundations, pseudocode, complexity analysis, and real-world applications
 
 ---
 
 ## 🎯 About This Documentation
 
-This documentation provides in-depth coverage of **400+ algorithms** implemented in the TheAlgorithms/Java repository. Each algorithm is documented with:
+This documentation provides in-depth analysis of every algorithm implemented in the TheAlgorithms/Java repository. Each algorithm documentation includes:
 
-- 🔢 **Mathematical Foundation** - Formal definitions, theorems, and proofs
-- 📊 **Complexity Analysis** - Time and space complexity with derivations
-- 🔄 **Pseudocode** - Language-agnostic algorithm descriptions
-- 💻 **Implementation Notes** - Java-specific considerations
-- 🌍 **Real-World Applications** - How algorithms are used in industry
-- ⚖️ **Comparisons** - Trade-offs between related algorithms
+- **Mathematical Foundation** - Formal definitions, formulas, and proofs
+- **Pseudocode** - Language-agnostic algorithm representation
+- **Complexity Analysis** - Time and space complexity with derivations
+- **Real-World Applications** - Practical use cases in software engineering
+- **Implementation Notes** - Java-specific details and optimizations
 
 ---
 
-## 📖 Quick Navigation
+## 📖 Documentation Index
 
 ### Core Algorithm Categories
 
-| # | Category | Algorithms | Description |
-|---|----------|------------|-------------|
-| 01 | [**Sorting Algorithms**](./01-sorting-algorithms/README.md) | ~50 | Comparison, non-comparison, and hybrid sorts |
-| 02 | [**Searching Algorithms**](./02-searching-algorithms/README.md) | ~33 | Linear, binary, graph traversals |
-| 03 | [**Dynamic Programming**](./03-dynamic-programming/README.md) | ~54 | Optimization and counting problems |
-| 04 | [**Data Structures**](./04-data-structures/README.md) | ~100+ | Linear, tree, graph, and hash structures |
-| 05 | [**Graph Algorithms**](./05-graph-algorithms/README.md) | ~17 | Shortest path, MST, network flow |
-| 06 | [**Backtracking**](./06-backtracking/README.md) | ~18 | Constraint satisfaction problems |
-| 07 | [**Cryptography**](./07-cryptography/README.md) | ~25+ | Symmetric and asymmetric ciphers |
-| 08 | [**Mathematical Algorithms**](./08-mathematical-algorithms/README.md) | ~100+ | Number theory, geometry, statistics |
-| 09 | [**String Algorithms**](./09-string-algorithms/README.md) | ~30+ | Pattern matching, manipulation |
-| 10 | [**Greedy Algorithms**](./10-greedy-algorithms/README.md) | ~15 | Optimization by local choices |
-| 11 | [**Divide and Conquer**](./11-divide-and-conquer/README.md) | ~7 | Recursive problem decomposition |
+| # | Category | Description | Algorithms |
+|---|----------|-------------|------------|
+| 01 | [**Sorting Algorithms**](./01-sorting-algorithms/README.md) | Comparison, distribution, and hybrid sorts | ~50 |
+| 02 | [**Searching Algorithms**](./02-searching-algorithms/README.md) | Linear, binary, graph traversals | ~33 |
+| 03 | [**Dynamic Programming**](./03-dynamic-programming/README.md) | Optimization and counting problems | ~54 |
+| 04 | [**Data Structures**](./04-data-structures/README.md) | Linear, trees, graphs, hashing | ~100+ |
+| 05 | [**Graph Algorithms**](./05-graph-algorithms/README.md) | Shortest path, MST, flow networks | ~40 |
+| 06 | [**Backtracking**](./06-backtracking/README.md) | Constraint satisfaction, puzzles | ~18 |
+| 07 | [**Cryptography**](./07-cryptography/README.md) | Symmetric and asymmetric ciphers | ~25 |
+| 08 | [**Mathematical Algorithms**](./08-mathematical-algorithms/README.md) | Number theory, geometry, statistics | ~100+ |
+| 09 | [**String Algorithms**](./09-string-algorithms/README.md) | Pattern matching, manipulation | ~30 |
+| 10 | [**Greedy Algorithms**](./10-greedy-algorithms/README.md) | Optimization by local choices | ~15 |
+| 11 | [**Divide and Conquer**](./11-divide-and-conquer/README.md) | Recursive problem decomposition | ~7 |
 
-### Appendix
+### Additional Resources
 
 | Resource | Description |
 |----------|-------------|
 | [**Complexity Cheatsheet**](./appendix/complexity-cheatsheet.md) | Quick reference for all algorithm complexities |
 | [**Glossary**](./appendix/glossary.md) | Definitions of key terms |
 | [**References**](./appendix/references.md) | Academic papers and resources |
+| [**Contributing Guide**](./TEMPLATE.md) | Template for adding new documentation |
 
 ---
 
-## 🗂️ Algorithm Index by Category
+## 🗺️ Quick Navigation by Algorithm Type
 
-### 01. Sorting Algorithms
+### Sorting Algorithms
 
 <details>
-<summary>Click to expand (50 algorithms)</summary>
+<summary><b>Comparison-Based Sorts</b></summary>
 
-#### Comparison Sorts
-| Algorithm | Time (Avg) | Space | Stable | Link |
-|-----------|------------|-------|--------|------|
-| Bubble Sort | $O(n^2)$ | $O(1)$ | ✅ | [📄](./01-sorting-algorithms/comparison-sorts/bubble-sort.md) |
-| Selection Sort | $O(n^2)$ | $O(1)$ | ❌ | [📄](./01-sorting-algorithms/comparison-sorts/selection-sort.md) |
-| Insertion Sort | $O(n^2)$ | $O(1)$ | ✅ | [📄](./01-sorting-algorithms/comparison-sorts/insertion-sort.md) |
-| Merge Sort | $O(n \log n)$ | $O(n)$ | ✅ | [📄](./01-sorting-algorithms/comparison-sorts/merge-sort.md) |
-| Quick Sort | $O(n \log n)$ | $O(\log n)$ | ❌ | [📄](./01-sorting-algorithms/comparison-sorts/quick-sort.md) |
-| Heap Sort | $O(n \log n)$ | $O(1)$ | ❌ | [📄](./01-sorting-algorithms/comparison-sorts/heap-sort.md) |
-| Shell Sort | $O(n^{3/2})$ | $O(1)$ | ❌ | [📄](./01-sorting-algorithms/comparison-sorts/shell-sort.md) |
-
-#### Non-Comparison Sorts
-| Algorithm | Time (Avg) | Space | Stable | Link |
-|-----------|------------|-------|--------|------|
-| Counting Sort | $O(n + k)$ | $O(k)$ | ✅ | [📄](./01-sorting-algorithms/non-comparison-sorts/counting-sort.md) |
-| Radix Sort | $O(nk)$ | $O(n + k)$ | ✅ | [📄](./01-sorting-algorithms/non-comparison-sorts/radix-sort.md) |
-| Bucket Sort | $O(n + k)$ | $O(n)$ | ✅ | [📄](./01-sorting-algorithms/non-comparison-sorts/bucket-sort.md) |
-
-#### Hybrid Sorts
-| Algorithm | Time (Avg) | Space | Stable | Link |
-|-----------|------------|-------|--------|------|
-| Tim Sort | $O(n \log n)$ | $O(n)$ | ✅ | [📄](./01-sorting-algorithms/hybrid-sorts/tim-sort.md) |
-| Intro Sort | $O(n \log n)$ | $O(\log n)$ | ❌ | [📄](./01-sorting-algorithms/hybrid-sorts/introspective-sort.md) |
+| Algorithm | Time (Best) | Time (Avg) | Time (Worst) | Space | Stable |
+|-----------|-------------|------------|--------------|-------|--------|
+| [Bubble Sort](./01-sorting-algorithms/comparison-sorts/bubble-sort.md) | O(n) | O(n²) | O(n²) | O(1) | ✅ |
+| [Selection Sort](./01-sorting-algorithms/comparison-sorts/selection-sort.md) | O(n²) | O(n²) | O(n²) | O(1) | ❌ |
+| [Insertion Sort](./01-sorting-algorithms/comparison-sorts/insertion-sort.md) | O(n) | O(n²) | O(n²) | O(1) | ✅ |
+| [Merge Sort](./01-sorting-algorithms/comparison-sorts/merge-sort.md) | O(n log n) | O(n log n) | O(n log n) | O(n) | ✅ |
+| [Quick Sort](./01-sorting-algorithms/comparison-sorts/quick-sort.md) | O(n log n) | O(n log n) | O(n²) | O(log n) | ❌ |
+| [Heap Sort](./01-sorting-algorithms/comparison-sorts/heap-sort.md) | O(n log n) | O(n log n) | O(n log n) | O(1) | ❌ |
 
 </details>
 
-### 02. Searching Algorithms
-
 <details>
-<summary>Click to expand (33 algorithms)</summary>
+<summary><b>Non-Comparison Sorts</b></summary>
 
-| Algorithm | Time (Avg) | Space | Link |
-|-----------|------------|-------|------|
-| Linear Search | $O(n)$ | $O(1)$ | [📄](./02-searching-algorithms/linear-search.md) |
-| Binary Search | $O(\log n)$ | $O(1)$ | [📄](./02-searching-algorithms/binary-search.md) |
-| Interpolation Search | $O(\log \log n)$ | $O(1)$ | [📄](./02-searching-algorithms/interpolation-search.md) |
-| Jump Search | $O(\sqrt{n})$ | $O(1)$ | [📄](./02-searching-algorithms/jump-search.md) |
-| Exponential Search | $O(\log n)$ | $O(1)$ | [📄](./02-searching-algorithms/exponential-search.md) |
-| Fibonacci Search | $O(\log n)$ | $O(1)$ | [📄](./02-searching-algorithms/fibonacci-search.md) |
-| Ternary Search | $O(\log n)$ | $O(1)$ | [📄](./02-searching-algorithms/ternary-search.md) |
-| BFS | $O(V + E)$ | $O(V)$ | [📄](./02-searching-algorithms/bfs.md) |
-| DFS | $O(V + E)$ | $O(V)$ | [📄](./02-searching-algorithms/dfs.md) |
+| Algorithm | Time | Space | Best For |
+|-----------|------|-------|----------|
+| [Counting Sort](./01-sorting-algorithms/non-comparison-sorts/counting-sort.md) | O(n + k) | O(k) | Small range integers |
+| [Radix Sort](./01-sorting-algorithms/non-comparison-sorts/radix-sort.md) | O(d(n + k)) | O(n + k) | Fixed-length integers |
+| [Bucket Sort](./01-sorting-algorithms/non-comparison-sorts/bucket-sort.md) | O(n + k) | O(n) | Uniformly distributed |
 
 </details>
 
-### 03. Dynamic Programming
-
 <details>
-<summary>Click to expand (54 algorithms)</summary>
+<summary><b>Hybrid Sorts</b></summary>
 
-| Algorithm | Problem Type | Link |
-|-----------|--------------|------|
-| Fibonacci | Sequence | [📄](./03-dynamic-programming/fibonacci.md) |
-| 0/1 Knapsack | Optimization | [📄](./03-dynamic-programming/knapsack-problem.md) |
-| Longest Common Subsequence | String | [📄](./03-dynamic-programming/longest-common-subsequence.md) |
-| Edit Distance | String | [📄](./03-dynamic-programming/edit-distance.md) |
-| Coin Change | Counting | [📄](./03-dynamic-programming/coin-change.md) |
-| Longest Increasing Subsequence | Sequence | [📄](./03-dynamic-programming/longest-increasing-subsequence.md) |
-| Matrix Chain Multiplication | Optimization | [📄](./03-dynamic-programming/matrix-chain-multiplication.md) |
-| Rod Cutting | Optimization | [📄](./03-dynamic-programming/rod-cutting.md) |
+| Algorithm | Description |
+|-----------|-------------|
+| [Tim Sort](./01-sorting-algorithms/hybrid-sorts/tim-sort.md) | Merge + Insertion (Python/Java default) |
+| [Introspective Sort](./01-sorting-algorithms/hybrid-sorts/introspective-sort.md) | Quick + Heap + Insertion |
 
 </details>
 
-### 04. Data Structures
+### Searching Algorithms
 
 <details>
-<summary>Click to expand (100+ implementations)</summary>
+<summary><b>Array/List Searches</b></summary>
 
-#### Linear Structures
-| Structure | Operations | Link |
-|-----------|------------|------|
-| Dynamic Array | Insert, Delete, Access | [📄](./04-data-structures/linear/dynamic-array.md) |
-| Singly Linked List | Insert, Delete, Traverse | [📄](./04-data-structures/linear/singly-linked-list.md) |
-| Doubly Linked List | Insert, Delete, Traverse | [📄](./04-data-structures/linear/doubly-linked-list.md) |
-| Stack | Push, Pop, Peek | [📄](./04-data-structures/linear/stack.md) |
-| Queue | Enqueue, Dequeue, Peek | [📄](./04-data-structures/linear/queue.md) |
-| Deque | Insert/Delete both ends | [📄](./04-data-structures/linear/deque.md) |
-
-#### Tree Structures
-| Structure | Operations | Link |
-|-----------|------------|------|
-| Binary Tree | Insert, Delete, Traverse | [📄](./04-data-structures/trees/binary-tree.md) |
-| Binary Search Tree | Insert, Delete, Search | [📄](./04-data-structures/trees/bst.md) |
-| AVL Tree | Self-balancing BST | [📄](./04-data-structures/trees/avl-tree.md) |
-| Red-Black Tree | Self-balancing BST | [📄](./04-data-structures/trees/red-black-tree.md) |
-| B-Tree | Disk-optimized search | [📄](./04-data-structures/trees/b-tree.md) |
-| Trie | Prefix search | [📄](./04-data-structures/trees/trie.md) |
-| Segment Tree | Range queries | [📄](./04-data-structures/trees/segment-tree.md) |
-| Fenwick Tree | Range updates | [📄](./04-data-structures/trees/fenwick-tree.md) |
-
-#### Hashing
-| Structure | Operations | Link |
-|-----------|------------|------|
-| Hash Map | Insert, Delete, Lookup | [📄](./04-data-structures/hashing/hash-map.md) |
-| Bloom Filter | Probabilistic membership | [📄](./04-data-structures/hashing/bloom-filter.md) |
+| Algorithm | Time | Space | Prerequisite |
+|-----------|------|-------|--------------|
+| [Linear Search](./02-searching-algorithms/linear-search.md) | O(n) | O(1) | None |
+| [Binary Search](./02-searching-algorithms/binary-search.md) | O(log n) | O(1) | Sorted array |
+| [Interpolation Search](./02-searching-algorithms/interpolation-search.md) | O(log log n)* | O(1) | Sorted, uniform |
+| [Fibonacci Search](./02-searching-algorithms/fibonacci-search.md) | O(log n) | O(1) | Sorted array |
 
 </details>
 
-### 05. Graph Algorithms
-
 <details>
-<summary>Click to expand (17 algorithms)</summary>
+<summary><b>Graph Traversals</b></summary>
 
-#### Shortest Path
-| Algorithm | Time | Use Case | Link |
-|-----------|------|----------|------|
-| Dijkstra | $O((V+E) \log V)$ | Non-negative weights | [📄](./05-graph-algorithms/shortest-path/dijkstra.md) |
-| Bellman-Ford | $O(VE)$ | Negative weights | [📄](./05-graph-algorithms/shortest-path/bellman-ford.md) |
-| Floyd-Warshall | $O(V^3)$ | All-pairs | [📄](./05-graph-algorithms/shortest-path/floyd-warshall.md) |
-| A* | $O(E)$ | Heuristic search | [📄](./05-graph-algorithms/shortest-path/a-star.md) |
-
-#### Minimum Spanning Tree
-| Algorithm | Time | Link |
-|-----------|------|------|
-| Prim's | $O(E \log V)$ | [📄](./05-graph-algorithms/spanning-tree/prim.md) |
-| Kruskal's | $O(E \log E)$ | [📄](./05-graph-algorithms/spanning-tree/kruskal.md) |
-
-#### Network Flow
-| Algorithm | Time | Link |
-|-----------|------|------|
-| Ford-Fulkerson | $O(E \cdot f)$ | [📄](./05-graph-algorithms/flow/ford-fulkerson.md) |
-| Edmonds-Karp | $O(VE^2)$ | [📄](./05-graph-algorithms/flow/edmonds-karp.md) |
+| Algorithm | Time | Space | Use Case |
+|-----------|------|-------|----------|
+| [BFS](./02-searching-algorithms/bfs.md) | O(V + E) | O(V) | Shortest path (unweighted) |
+| [DFS](./02-searching-algorithms/dfs.md) | O(V + E) | O(V) | Path finding, connectivity |
 
 </details>
 
----
+### Graph Algorithms
 
-## 🔍 Search by Problem Type
+<details>
+<summary><b>Shortest Path</b></summary>
 
-### Optimization Problems
-- [0/1 Knapsack](./03-dynamic-programming/knapsack-problem.md)
-- [Coin Change](./03-dynamic-programming/coin-change.md)
-- [Activity Selection](./10-greedy-algorithms/activity-selection.md)
-- [Traveling Salesman](./05-graph-algorithms/traveling-salesman.md)
+| Algorithm | Time | Space | Handles Negative |
+|-----------|------|-------|------------------|
+| [Dijkstra](./05-graph-algorithms/shortest-path/dijkstra.md) | O((V+E) log V) | O(V) | ❌ |
+| [Bellman-Ford](./05-graph-algorithms/shortest-path/bellman-ford.md) | O(VE) | O(V) | ✅ |
+| [Floyd-Warshall](./05-graph-algorithms/shortest-path/floyd-warshall.md) | O(V³) | O(V²) | ✅ |
+| [A*](./05-graph-algorithms/shortest-path/a-star.md) | O(E) | O(V) | ❌ |
 
-### String Problems
-- [Pattern Matching (KMP)](./09-string-algorithms/pattern-matching/kmp.md)
-- [Longest Common Subsequence](./03-dynamic-programming/longest-common-subsequence.md)
-- [Edit Distance](./03-dynamic-programming/edit-distance.md)
+</details>
 
-### Graph Problems
-- [Shortest Path](./05-graph-algorithms/shortest-path/dijkstra.md)
-- [Minimum Spanning Tree](./05-graph-algorithms/spanning-tree/prim.md)
-- [Graph Coloring](./06-backtracking/m-coloring.md)
+<details>
+<summary><b>Minimum Spanning Tree</b></summary>
 
-### Constraint Satisfaction
-- [N-Queens](./06-backtracking/n-queens.md)
-- [Sudoku Solver](./06-backtracking/sudoku-solver.md)
-- [Hamiltonian Path](./06-backtracking/hamiltonian-cycle.md)
+| Algorithm | Time | Space | Best For |
+|-----------|------|-------|----------|
+| [Prim](./05-graph-algorithms/spanning-tree/prim.md) | O(E log V) | O(V) | Dense graphs |
+| [Kruskal](./05-graph-algorithms/spanning-tree/kruskal.md) | O(E log E) | O(V) | Sparse graphs |
+
+</details>
 
 ---
 
 ## 📊 Complexity Quick Reference
 
-### Sorting Algorithms
+### Time Complexity Hierarchy
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│ Algorithm        │ Best      │ Average   │ Worst     │ Space │
-├─────────────────────────────────────────────────────────────┤
-│ Quick Sort       │ O(n lg n) │ O(n lg n) │ O(n²)     │ O(lg n)│
-│ Merge Sort       │ O(n lg n) │ O(n lg n) │ O(n lg n) │ O(n)  │
-│ Heap Sort        │ O(n lg n) │ O(n lg n) │ O(n lg n) │ O(1)  │
-│ Tim Sort         │ O(n)      │ O(n lg n) │ O(n lg n) │ O(n)  │
-│ Insertion Sort   │ O(n)      │ O(n²)     │ O(n²)     │ O(1)  │
-│ Counting Sort    │ O(n+k)    │ O(n+k)    │ O(n+k)    │ O(k)  │
-└─────────────────────────────────────────────────────────────┘
+O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(n³) < O(2ⁿ) < O(n!)
 ```
 
-### Data Structures
+### Visual Scale (n = 1,000,000)
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│ Structure        │ Access    │ Search    │ Insert    │ Delete │
-├─────────────────────────────────────────────────────────────┤
-│ Array            │ O(1)      │ O(n)      │ O(n)      │ O(n)   │
-│ Linked List      │ O(n)      │ O(n)      │ O(1)      │ O(1)   │
-│ Hash Table       │ N/A       │ O(1)      │ O(1)      │ O(1)   │
-│ BST (balanced)   │ O(lg n)   │ O(lg n)   │ O(lg n)   │ O(lg n)│
-│ Heap             │ O(1)*     │ O(n)      │ O(lg n)   │ O(lg n)│
-└─────────────────────────────────────────────────────────────┘
-* Min/Max only
-```
+| Complexity | Operations | Time (1 GHz) |
+|------------|------------|--------------|
+| O(1) | 1 | 1 ns |
+| O(log n) | 20 | 20 ns |
+| O(n) | 1,000,000 | 1 ms |
+| O(n log n) | 20,000,000 | 20 ms |
+| O(n²) | 10¹² | 16.7 min |
+| O(2ⁿ) | ∞ | Heat death of universe |
 
 ---
 
-## 🤝 Contributing to Documentation
+## 🎓 Learning Paths
 
-We welcome contributions! Please follow these guidelines:
+### Beginner Path
+1. [Linear Search](./02-searching-algorithms/linear-search.md)
+2. [Binary Search](./02-searching-algorithms/binary-search.md)
+3. [Bubble Sort](./01-sorting-algorithms/comparison-sorts/bubble-sort.md)
+4. [Selection Sort](./01-sorting-algorithms/comparison-sorts/selection-sort.md)
+5. [Insertion Sort](./01-sorting-algorithms/comparison-sorts/insertion-sort.md)
 
-### Adding New Algorithm Documentation
+### Intermediate Path
+1. [Merge Sort](./01-sorting-algorithms/comparison-sorts/merge-sort.md)
+2. [Quick Sort](./01-sorting-algorithms/comparison-sorts/quick-sort.md)
+3. [BFS & DFS](./02-searching-algorithms/bfs.md)
+4. [Dynamic Programming Intro](./03-dynamic-programming/README.md)
+5. [Basic Data Structures](./04-data-structures/README.md)
 
-1. Use the [TEMPLATE.md](./TEMPLATE.md) as your starting point
-2. Place files in the appropriate category folder
-3. Update the category README with links
-4. Update this index
+### Advanced Path
+1. [Graph Algorithms](./05-graph-algorithms/README.md)
+2. [Advanced DP](./03-dynamic-programming/README.md)
+3. [String Algorithms](./09-string-algorithms/README.md)
+4. [Cryptography](./07-cryptography/README.md)
 
-### Documentation Quality Checklist
+---
 
-- [ ] Mathematical definition provided
-- [ ] Complexity analysis with derivation
-- [ ] Clear pseudocode
-- [ ] Step-by-step example
-- [ ] At least 3 real-world applications
-- [ ] Comparison with alternatives
-- [ ] Edge cases documented
-- [ ] References included
+## 🔧 How to Use This Documentation
 
-See [PLAN.md](./PLAN.md) for the full documentation roadmap.
+### For Learning
+1. Start with the category README for overview
+2. Read the mathematical foundation section
+3. Study the pseudocode before implementation
+4. Work through step-by-step examples
+5. Review real-world applications
+
+### For Reference
+1. Use the complexity cheatsheet for quick lookups
+2. Check comparison tables to choose algorithms
+3. Review edge cases before implementation
+
+### For Contributing
+1. Use [TEMPLATE.md](./TEMPLATE.md) as your starting point
+2. Follow the quality checklist in [PLAN.md](./PLAN.md)
+3. Include all required sections
+4. Add real-world examples
+
+---
+
+## 📈 Documentation Progress
+
+| Category | Status | Progress |
+|----------|--------|----------|
+| Sorting Algorithms | 🚧 In Progress | ░░░░░░░░░░ 0% |
+| Searching Algorithms | 🚧 In Progress | ░░░░░░░░░░ 0% |
+| Dynamic Programming | 📋 Planned | ░░░░░░░░░░ 0% |
+| Data Structures | 📋 Planned | ░░░░░░░░░░ 0% |
+| Graph Algorithms | 📋 Planned | ░░░░░░░░░░ 0% |
+| Backtracking | 📋 Planned | ░░░░░░░░░░ 0% |
+| Cryptography | 📋 Planned | ░░░░░░░░░░ 0% |
+| Mathematical | 📋 Planned | ░░░░░░░░░░ 0% |
+| String Algorithms | 📋 Planned | ░░░░░░░░░░ 0% |
+| Greedy Algorithms | 📋 Planned | ░░░░░░░░░░ 0% |
+| Divide & Conquer | 📋 Planned | ░░░░░░░░░░ 0% |
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! To add or improve documentation:
+
+1. Check [PLAN.md](./PLAN.md) for the documentation plan
+2. Use [TEMPLATE.md](./TEMPLATE.md) for new algorithm docs
+3. Follow the quality checklist
+4. Submit a pull request
+
+See [CONTRIBUTING.md](../CONTRIBUTING.md) for general contribution guidelines.
 
 ---
 
 ## 📜 License
 
-This documentation is part of the [TheAlgorithms/Java](https://github.com/TheAlgorithms/Java) project, licensed under the MIT License.
-
----
-
-## 🔗 Quick Links
-
-- [📦 Main Repository](https://github.com/TheAlgorithms/Java)
-- [📄 Contributing Guidelines](../CONTRIBUTING.md)
-- [📋 Documentation Plan](./PLAN.md)
-- [📝 Documentation Template](./TEMPLATE.md)
+This documentation is part of TheAlgorithms/Java project and is licensed under the MIT License.
 
 ---
 
