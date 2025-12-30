@@ -44,6 +44,14 @@ This documentation provides in-depth analysis of every algorithm implemented in 
 | [**References**](./appendix/references.md) | Academic papers and resources |
 | [**Contributing Guide**](./TEMPLATE.md) | Template for adding new documentation |
 
+### Reports & Tracking
+
+| Report | Description |
+|--------|-------------|
+| [**Metrics Dashboard**](./reports/METRICS-DASHBOARD.md) | Overall progress and KPIs |
+| [**Phase 0 Report**](./reports/PHASE0-FOUNDATION-REPORT.md) | Foundation phase completion |
+| [**Algorithm Inventory**](./reports/ALGORITHM-INVENTORY.md) | Complete algorithm tracking |
+
 ---
 
 ## 🗺️ Quick Navigation by Algorithm Type
@@ -206,8 +214,8 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(n³) < O(2ⁿ) < O(n!)
 
 | Category | Status | Progress |
 |----------|--------|----------|
-| Sorting Algorithms | 🚧 In Progress | ░░░░░░░░░░ 0% |
-| Searching Algorithms | 🚧 In Progress | ░░░░░░░░░░ 0% |
+| Sorting Algorithms | ✅ Complete | █████████░ 90% |
+| Searching Algorithms | 🚧 In Progress | ████░░░░░░ 40% |
 | Dynamic Programming | 📋 Planned | ░░░░░░░░░░ 0% |
 | Data Structures | 📋 Planned | ░░░░░░░░░░ 0% |
 | Graph Algorithms | 📋 Planned | ░░░░░░░░░░ 0% |
@@ -217,6 +225,10 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(n³) < O(2ⁿ) < O(n!)
 | String Algorithms | 📋 Planned | ░░░░░░░░░░ 0% |
 | Greedy Algorithms | 📋 Planned | ░░░░░░░░░░ 0% |
 | Divide & Conquer | 📋 Planned | ░░░░░░░░░░ 0% |
+
+### Phase Status
+- **Phase 0: Foundation** - ✅ Complete ([Report](./reports/PHASE0-FOUNDATION-REPORT.md))
+- **Phase 1: Core Algorithms** - 🚧 In Progress
 
 ---
 

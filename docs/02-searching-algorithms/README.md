@@ -153,10 +153,10 @@ For graph G = (V, E):
 
 | File | Algorithm | Status |
 |------|-----------|--------|
-| [linear-search.md](./linear-search.md) | Linear Search | 📋 Planned |
-| [binary-search.md](./binary-search.md) | Binary Search | 📋 Planned |
-| [interpolation-search.md](./interpolation-search.md) | Interpolation Search | 📋 Planned |
-| [jump-search.md](./jump-search.md) | Jump Search | 📋 Planned |
+| [linearsearch.md](./linear-search/linearsearch.md) | Linear Search | ✅ Complete |
+| [binarysearch.md](./binary-search/binarysearch.md) | Binary Search | ✅ Complete |
+| [interpolationsearch.md](./interpolation-search/interpolationsearch.md) | Interpolation Search | ✅ Complete |
+| [jumpsearch.md](./jump-search/jumpsearch.md) | Jump Search | ✅ Complete |
 | [exponential-search.md](./exponential-search.md) | Exponential Search | 📋 Planned |
 | [fibonacci-search.md](./fibonacci-search.md) | Fibonacci Search | 📋 Planned |
 | [ternary-search.md](./ternary-search.md) | Ternary Search | 📋 Planned |
